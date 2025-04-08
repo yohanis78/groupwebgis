@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    height: 520px; /* Ukuran tetap di laptop */
+    width: 100%; /* Biarkan fleksibel, tapi tidak melebihi batas */
+    max-width: 1300px; /* Tetap maksimal di laptop */
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 5px auto; /* Agar tetap center */
+}
+
+/* Responsif khusus HP */
+@media (max-width: 768px) {
+    #map {
+        height: 60vh; /* Tambah tinggi di HP supaya tetap besar */
+        width: 100%; /* Lebarkan agar pas layar HP */
+    }
+
+    #searchContainer {
+        flex-direction: column; /* Input & button berbaris ke bawah */
+        align-items: center;
+    }
+
+    #searchContainer input, #searchContainer button {
+        width: 100%; /* Agar full di HP */
+        font-size: 16px;
+    }
+}
+
+
